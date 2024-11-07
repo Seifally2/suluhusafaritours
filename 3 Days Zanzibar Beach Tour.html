@@ -330,7 +330,7 @@ Dar es Salaam, Zanzibar
 <h2 class="accordion-header" id="headingOne">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 01. When is the best time to visit Zanzibar?
-</button>
+</button> 
 </h2>
 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 <div class="accordion-body">
@@ -760,69 +760,79 @@ Zanzibar offers a variety of activities, from relaxing on the beach to water spo
 </div>
 </div>
 <div class="col-lg-4">
-<div class="booking-form-box">
-<h3>Book the Tour</h3>
-<p>Arrange your trip in advance - book this tour now!</p>
-<form class="banner-form">
-<div class="search-box-single destination-box">
-<div class="searchbox-icon">
-<i class="bi bi-pencil-fill"></i>
-</div>
-<div class="searchbox-input">
-<input type="text" placeholder="Full Name*">
-</div>
-</div>
-<div class="search-box-single destination-box">
-<div class="searchbox-icon">
-<i class="bi bi-envelope-fill"></i>
-</div>
-<div class="searchbox-input">
-<input type="text" placeholder="E-mail*">
-</div>
-</div>
-<div class="search-box-single destination-box">
-<div class="searchbox-icon">
-<i class="bi bi-telephone"></i>
-</div>
-<div class="searchbox-input">
-<input type="text" placeholder="Phone Number*">
-</div>
-</div>
-<div class="search-box-single destination-box postition-relative">
-<div class="searchbox-icon">
-<i class="bi bi-calendar-minus"></i>
-</div>
-<div class="searchbox-input">
-<input placeholder="Select your date" type="text" name="checkIn" id="datepicker" autocomplete="off" class="calendar">
-</div>
-</div>
-<div class="search-box-single">
-<div class="searchbox-icon">
-<i class="bi bi-person-fill"></i>
-</div>
-<div class="searchbox-input">
-<input type="number" placeholder="People *">
-</div>
-</div>
-<div class="search-box-single">
-<div class="searchbox-icon">
-<i class="bi bi-tags-fill"></i>
-</div>
-<div class="searchbox-input">
-<input type="number" placeholder="Number of tickets *">
-</div>
-</div>
-<div class="search-box-single">
-<div class="searchbox-icon">
-<i class="bi bi-chat-left-text-fill"></i>
-</div>
-<div class="searchbox-input">
-<textarea name="message3" rows="6" placeholder="Your Enquiry*"></textarea>
-</div>
-</div>
-<button class="eg-btn btn--primary btn--lg w-100 mt-3">BOOK NOW</button>
-</form>
-</div>
+    <div class="booking-form-box">
+      <h3>Book the Tour</h3>
+      <p>Arrange your trip in advance - book this tour now!</p>
+      <form class="banner-form" action="https://formspree.io/f/your-form-id" method="POST">
+        
+        <div class="search-box-single destination-box">
+          <div class="searchbox-icon">
+            <i class="bi bi-pencil-fill"></i>
+          </div>
+          <div class="searchbox-input">
+            <input type="text" name="name" placeholder="Full Name*" required>
+          </div>
+        </div>
+  
+        <div class="search-box-single destination-box">
+          <div class="searchbox-icon">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="searchbox-input">
+            <input type="email" name="email" placeholder="E-mail*" required>
+          </div>
+        </div>
+  
+        <div class="search-box-single destination-box">
+          <div class="searchbox-icon">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div class="searchbox-input">
+            <input type="text" name="phone" placeholder="Phone Number*" required>
+          </div>
+        </div>
+  
+        <div class="search-box-single destination-box postition-relative">
+          <div class="searchbox-icon">
+            <i class="bi bi-calendar-minus"></i>
+          </div>
+          <div class="searchbox-input">
+            <input placeholder="Select your date" type="text" name="date" id="datepicker" autocomplete="off" class="calendar" required>
+          </div>
+        </div>
+  
+        <div class="search-box-single">
+          <div class="searchbox-icon">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="searchbox-input">
+            <input type="number" name="people" placeholder="People *" required>
+          </div>
+        </div>
+  
+        <div class="search-box-single">
+          <div class="searchbox-icon">
+            <i class="bi bi-tags-fill"></i>
+          </div>
+          <div class="searchbox-input">
+            <input type="number" name="tickets" placeholder="Number of tickets *" required>
+          </div>
+        </div>
+  
+        <div class="search-box-single">
+          <div class="searchbox-icon">
+            <i class="bi bi-chat-left-text-fill"></i>
+          </div>
+          <div class="searchbox-input">
+            <textarea name="message" rows="6" placeholder="Your Enquiry*" required></textarea>
+          </div>
+        </div>
+  
+        <button class="eg-btn btn--primary btn--lg w-100 mt-3" type="submit">BOOK NOW</button>
+      </form>
+    </div>
+  </div>
+  
 <div class="sidebar-offer">
 <div class="offer-badge">
 
